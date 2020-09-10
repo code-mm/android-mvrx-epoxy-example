@@ -50,6 +50,41 @@ class HomeRepository @Inject constructor() : BaseRepository() {
             title = "four",
             content = "晚上好",
             date = Date().time
-        )
+        ),
+        UiDataModel.MessageModel(
+            id = "5",
+            avatar = "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2319772070,3114389419&fm=26&gp=0.jpg",
+            title = "five",
+            content = "晚上好",
+            date = Date().time
+        ),
+        UiDataModel.MessageModel(
+            id = "6",
+            avatar = "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2319772070,3114389419&fm=26&gp=0.jpg",
+            title = "six",
+            content = "晚上好",
+            date = Date().time
+        ),
+        UiDataModel.MessageModel(
+            id = "7",
+            avatar = "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2319772070,3114389419&fm=26&gp=0.jpg",
+            title = "saven",
+            content = "晚上好",
+            date = Date().time
+        ),
+        UiDataModel.MessageModel(
+            id = "8",
+            avatar = "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2319772070,3114389419&fm=26&gp=0.jpg",
+            title = "nine",
+            content = "晚上好",
+            date = Date().time
+        ),
+        UiDataModel.MessageModel(
+            id = "9",
+            avatar = "https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2319772070,3114389419&fm=26&gp=0.jpg",
+            title = "ten",
+            content = "晚上好",
+            date = Date().time
+        ),
     )
 }

@@ -1,5 +1,6 @@
 package com.ms.app.ui.base
 
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Parcelable
 import android.text.InputFilter
@@ -24,6 +25,7 @@ import com.ms.app.itemMessage
 import com.ms.app.ui.datamodel.DataModel
 import com.ms.app.ui.datamodel.UiDataModel
 import com.ms.view.dialog.loading.progress.UIProgressDialog
+import kotlinx.android.synthetic.main.common_epoxy.*
 
 abstract class BaseFragment : BaseMvRxFragment() {
 
@@ -247,10 +249,19 @@ abstract class BaseFragment : BaseMvRxFragment() {
         }
     }
 
+    open fun setToolBarBackground(color: Int) {
+        _ToolBar.setBackgroundColor(color)
+    }
 
     open fun setToolBarTitle(text: String) {
         if (_ToolBarTextViewTitle != null) {
             _ToolBarTextViewTitle!!.text = text;
+        }
+    }
+
+    open fun setToolBarTitleColor(color: Int) {
+        if (_ToolBarTextViewTitle != null) {
+            _ToolBarTextViewTitle!!.setTextColor(color)
         }
     }
 }

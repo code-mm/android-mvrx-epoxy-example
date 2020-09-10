@@ -74,4 +74,9 @@ object ThreadPoolUtils {
             singleThreadExecutor.shutdown()
         }
     }
+
+
+    fun isMainThread(): Boolean {
+        return Thread.currentThread().name.equals("main")
+    }
 }

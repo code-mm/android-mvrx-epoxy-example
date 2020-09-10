@@ -21,24 +21,19 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class SplashActivity : BaseAppCompatActivity() {
 
-
     override fun layout(): Int {
         return R.layout.activity_splash;
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         lauch()
     }
-
 
     override fun onStart() {
         super.onStart()
         lauch()
     }
-
 
     private fun lauch() {
 
@@ -70,8 +65,6 @@ class SplashActivity : BaseAppCompatActivity() {
             },
             Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE
         )
-
-
     }
 
     override fun setStatusBar() {

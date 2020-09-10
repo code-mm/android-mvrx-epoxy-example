@@ -23,7 +23,7 @@ public class PermissionUtilsImpl {
     }
 
 
-    //    group:android.permission-group.CONTACTS
+//    group:android.permission-group.CONTACTS
 //    permission:android.permission.WRITE_CONTACTS
 //    permission:android.permission.GET_ACCOUNTS
 //    permission:android.permission.READ_CONTACTS
@@ -123,10 +123,6 @@ public class PermissionUtilsImpl {
 
     private static FragmentActivity mActivity;
 
-    private static String ok = "确定";
-    private static String exit = "退出";
-    private static String hintMsg = "";
-
     public interface CallBack {
         void success();
 
@@ -158,11 +154,8 @@ public class PermissionUtilsImpl {
         cpPer.clear();
 
         for (String it : pers) {
-
             cpPer.add(it);
-
         }
-
         reqper(activity);
     }
 
@@ -307,7 +300,7 @@ public class PermissionUtilsImpl {
                             perstr += "【位置】";
                         }
 
-                    }  else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    } else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
                             || it.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     ) {
 
@@ -432,7 +425,7 @@ public class PermissionUtilsImpl {
                             perstr += "【位置】";
                         }
 
-                    }  else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    } else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
                             || it.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     ) {
 
@@ -573,7 +566,7 @@ public class PermissionUtilsImpl {
                             perstr += "【位置】";
                         }
 
-                    }  else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
+                    } else if (it.equals(Manifest.permission.READ_EXTERNAL_STORAGE)
                             || it.equals(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     ) {
 
@@ -693,7 +686,7 @@ public class PermissionUtilsImpl {
                             perstr += "【传感器】";
                         }
 
-                    }else if (it.equals(Manifest.permission.ACCESS_FINE_LOCATION)
+                    } else if (it.equals(Manifest.permission.ACCESS_FINE_LOCATION)
                             || it.equals(Manifest.permission.ACCESS_COARSE_LOCATION)
                     ) {
 

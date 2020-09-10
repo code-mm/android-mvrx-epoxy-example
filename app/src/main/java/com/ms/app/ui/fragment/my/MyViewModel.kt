@@ -10,8 +10,6 @@ import com.ms.app.ui.di.DaggerMvRxViewModelFactory
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
 
-data class MyState(val message: Async<String> = Uninitialized) : MvRxState
-
 class MyViewModel @AssistedInject constructor(
     @Assisted state: MyState,
     private val repo: MyRepository
@@ -32,7 +30,5 @@ class MyViewModel @AssistedInject constructor(
 
     companion object : DaggerMvRxViewModelFactory<MyViewModel, MyState>(MyViewModel::class.java)
 
-    override fun update(uiFormDataModel: UiDataModel) {
 
-    }
 }

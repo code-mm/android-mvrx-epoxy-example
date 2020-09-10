@@ -11,7 +11,6 @@ import com.ms.app.ui.di.DaggerMvRxViewModelFactory
 import com.squareup.inject.assisted.Assisted
 import com.squareup.inject.assisted.AssistedInject
 
-data class HomeState(val datas: Async<List<DataModel>> = Uninitialized) : MvRxState
 
 class HomeViewModel @AssistedInject constructor(
     @Assisted state: HomeState,
@@ -34,7 +33,4 @@ class HomeViewModel @AssistedInject constructor(
     companion object :
         DaggerMvRxViewModelFactory<HomeViewModel, HomeState>(HomeViewModel::class.java)
 
-    override fun update(uiFormDataModel: UiDataModel) {
-        TODO("Not yet implemented")
-    }
 }

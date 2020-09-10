@@ -7,7 +7,7 @@ import com.ms.app.ui.datamodel.UiDataModel
 
 
 abstract class BaseViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S>(initialState,debugMode = BuildConfig.DEBUG){
-    abstract fun update(uiFormDataModel: UiDataModel)
+
 }
 
 

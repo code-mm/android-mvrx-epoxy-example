@@ -1,6 +1,7 @@
 package com.ms.app.ui.fragment.home
 
 
+import android.graphics.Color
 import android.os.Bundle
 import com.airbnb.mvrx.*
 import com.ms.app.ui.base.BaseFragment
@@ -39,7 +40,8 @@ class HomeFragment : BaseFragment(), MvRxView {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        setToolBarBackground(Color.parseColor("#FFFFFF"))
         setToolBarTitle("消息")
+        setToolBarTitleColor(Color.parseColor("#000000"))
     }
-
 }
