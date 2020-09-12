@@ -5,7 +5,6 @@ import android.text.InputFilter
 import android.text.InputFilter.LengthFilter
 import android.view.View
 import android.view.WindowManager
-import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.bdlbsc.doper.utils.thread.ThreadPoolUtils.runOnMainThread
@@ -13,7 +12,7 @@ import com.bdlbsc.doper.utils.toast.ToastUtils.show
 import com.ms.view.dialog.loading.progress.UIProgressDialog
 import com.ms.view.dialog.loading.progress.UIProgressDialog.MaterialBuilder
 
-open class BaseAppCompatActivity:
+open class BaseAppCompatActivity :
     AppCompatActivity() {
     var baseDialog: UIProgressDialog? = null
     protected var fragmentManager: FragmentManager? = null
@@ -45,17 +44,17 @@ open class BaseAppCompatActivity:
         }
     }
 
-    protected fun initView() {}
-   open  protected fun  layout():Int{
+    protected open fun initView() {}
+    protected open fun layout(): Int {
         return 0
     }
 
-    open protected fun isFullScreen():Boolean{
+    protected open fun isFullScreen(): Boolean {
         return false
     }
 
 
-    open protected fun setStatusBar() {
+    protected open fun setStatusBar() {
         //这里做了两件事情，1.使状态栏透明并使contentView填充到状态栏 2.预留出状态栏的位置，防止界面上的控件离顶部靠的太近。这样就可以实现开头说的第二种情况的沉浸式状态栏了
         StatusBarUtil.setTransparent(this)
     }

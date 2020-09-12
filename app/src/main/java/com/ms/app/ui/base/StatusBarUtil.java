@@ -22,7 +22,6 @@ import com.ms.app.R;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-;
 
 /**
  * Created by Jaeger on 16/2/14.

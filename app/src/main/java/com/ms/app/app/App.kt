@@ -19,8 +19,6 @@ class App : Application() {
         INSTANCE = this
 
         Log.e(TAG, "onCreate: "+Thread.currentThread().name )
-
-
         Log.e(TAG, "onCreate: main :  "+ ThreadPoolUtils.isMainThread())
 
 

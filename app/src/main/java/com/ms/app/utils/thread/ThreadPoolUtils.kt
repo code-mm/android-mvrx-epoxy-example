@@ -30,7 +30,7 @@ object ThreadPoolUtils {
      * 最大线程数
      * CPU核心数*2+1
      */
-    var singleThreadExecutor: ExecutorService =
+    private var singleThreadExecutor: ExecutorService =
         ThreadPoolExecutor(
             Runtime.getRuntime().availableProcessors() + 1,
             Runtime.getRuntime().availableProcessors() * 2 + 1,
@@ -49,7 +49,7 @@ object ThreadPoolUtils {
      *
      * @param runnable
      */
-    fun runOnMainThread(runnable: Runnable?) {
+    fun runOnMainThread(runnable: () -> Unit) {
         if (runnable != null) {
             handler.post(runnable)
         }

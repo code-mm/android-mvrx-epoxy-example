@@ -1,6 +1,5 @@
 package com.ms.app.ui.base
 
-import android.graphics.Color
 import android.os.Bundle
 import android.os.Parcelable
 import android.text.InputFilter
