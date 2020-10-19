@@ -1,8 +1,9 @@
-package com.bdlbsc.doper.utils.toast
+package com.ms.app.utils.toast
 
 import android.widget.Toast
 import com.ms.app.app.App
-import com.bdlbsc.doper.utils.thread.ThreadPoolUtils
+
+import com.ms.app.utils.thread.ThreadPoolUtils
 
 
 object ToastUtils {

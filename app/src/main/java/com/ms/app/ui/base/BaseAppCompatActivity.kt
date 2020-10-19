@@ -7,8 +7,9 @@ import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
-import com.bdlbsc.doper.utils.thread.ThreadPoolUtils.runOnMainThread
-import com.bdlbsc.doper.utils.toast.ToastUtils.show
+
+import com.ms.app.utils.thread.ThreadPoolUtils.runOnMainThread
+import com.ms.app.utils.toast.ToastUtils.show
 import com.ms.view.dialog.loading.progress.UIProgressDialog
 import com.ms.view.dialog.loading.progress.UIProgressDialog.MaterialBuilder
 

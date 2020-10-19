@@ -1,4 +1,4 @@
-package com.bdlbsc.doper.utils.thread
+package com.ms.app.utils.thread
 
 import android.os.Handler
 import android.os.Looper
@@ -49,7 +49,7 @@ object ThreadPoolUtils {
      *
      * @param runnable
      */
-    fun runOnMainThread(runnable: () -> Unit) {
+    fun runOnMainThread(runnable: Runnable) {
         if (runnable != null) {
             handler.post(runnable)
         }

@@ -16,13 +16,15 @@ import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.MvRx
 import com.airbnb.mvrx.MvRxState
-import com.bdlbsc.doper.utils.thread.ThreadPoolUtils.runOnMainThread
-import com.bdlbsc.doper.utils.toast.ToastUtils
+
+
 import com.ms.app.R
 import com.ms.app.itemMessage
 
 import com.ms.app.ui.datamodel.DataModel
 import com.ms.app.ui.datamodel.UiDataModel
+import com.ms.app.utils.thread.ThreadPoolUtils.runOnMainThread
+import com.ms.app.utils.toast.ToastUtils
 import com.ms.view.dialog.loading.progress.UIProgressDialog
 import kotlinx.android.synthetic.main.common_epoxy.*
 

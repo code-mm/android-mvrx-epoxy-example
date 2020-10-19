@@ -1,4 +1,4 @@
-package com.bdlbsc.doper.utils.md5
+package com.ms.app.utils.md5
 
 import java.security.MessageDigest
 import java.security.NoSuchAlgorithmException

@@ -5,7 +5,8 @@ import android.content.Context
 import android.util.Log
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
-import com.bdlbsc.doper.utils.thread.ThreadPoolUtils
+
+import com.ms.app.utils.thread.ThreadPoolUtils
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
